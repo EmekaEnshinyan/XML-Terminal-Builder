@@ -2,12 +2,9 @@
 
 # Xml-Terminal Parameters Builder And Translator 
 
-[![](https://img.shields.io/badge/license-Apache-v.-2.0-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE) [![](https://img.shields.io/pypi/v/praatio.svg)](https://pypi.org/project/praatio/)
+[![](https://img.shields.io/badge/license-Apache-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE) [![](https://img.shields.io/pypi/v/praatio.svg)](https://pypi.org/project/praatio/)
 
 *Questions?  Comments?  Feedback? [![](https://badges.gitter.im/praatio/Lobby.svg)](https://gitter.im/praatio/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)*
-
-
-*Questions?  Comments?  Feedback? [![]()*
 
 -----
 
