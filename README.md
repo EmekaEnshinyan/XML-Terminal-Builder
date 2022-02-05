@@ -29,9 +29,7 @@ of speech.  [Praat can be downloaded here](<http://www.fon.hum.uva.nl/praat/>)
 
 ## Documentation
 
-word documents
-
-
+paper documents
 
 ## Tutorials
 
@@ -48,7 +46,7 @@ silent
 
 ## Installation
 
-screamers,
+shouters,
 
 ## This is a test
 
