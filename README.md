@@ -32,7 +32,7 @@ of speech.  [Praat can be downloaded here](<http://www.fon.hum.uva.nl/praat/>)
 9. [Tests](#tests)
 10. [Citing praatIO](#citing-praatio)
 11. [Acknowledgements](#acknowledgements)
-12. [Test] (#test)
+12. [Test](#test)
 
 ## Documentation
 
