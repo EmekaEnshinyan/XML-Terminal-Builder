@@ -46,8 +46,8 @@ silent
 
 ## Installation
 
-shouters,
+shouters
 
 ## This is a test
 
-yeah?
+testing placement
