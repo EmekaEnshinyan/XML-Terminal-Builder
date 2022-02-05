@@ -1,5 +1,4 @@
 
-
 # Xml-Terminal Parameters Builder And Translator 
 
 [![](https://img.shields.io/badge/license-Apache-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE) [![](https://img.shields.io/pypi/v/praatio.svg)](https://pypi.org/project/praatio/)
@@ -12,7 +11,7 @@ Fundamental function: write data to a file, and place the data in a built .xml.
 
 This application takes in data from two sources: a source .xml file saved on the local disk and data from an API call, and writes the data onto a .txt file. The program is run by using the terminal with self-made parameters and inputting the following: the directory of the source .xml, the language url parameters to be inserted for the API call, and the output path for the newly built .xml file (the target file) with the data inserted in the required places in the target file.
 
-It uses the DOM XML parser, Maven Compiler, and PicoCli for creating custom commands.
+###It uses the DOM XML parser, Maven Compiler, and PicoCli for creating custom commands.
 
 Dom Parsing Documentation: https://docs.oracle.com/javase/tutorial/jaxp/dom/readingXML.html
 PicoCli: https://picocli.info/
