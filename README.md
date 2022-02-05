@@ -1,18 +1,25 @@
 
 
-# Xml Builder & Self-Made Terminal Parameters
+# Xml-Terminal Parameters Builder And Translator 
+
+[![](https://img.shields.io/badge/license-Apache v. 2.0-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE) [![](https://img.shields.io/pypi/v/praatio.svg)](https://pypi.org/project/praatio/)
+
+*Questions?  Comments?  Feedback? [![](https://badges.gitter.im/praatio/Lobby.svg)](https://gitter.im/praatio/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)*
 
 
 *Questions?  Comments?  Feedback? [![]()*
 
 -----
 
-A library for working with praat, time aligned audio transcripts, and audio files *that comes with batteries included*.
+Fundamental function: write data to a file, and place the data in a built .xml. 
 
-Praat uses a file format called textgrids, which are time aligned speech transcripts.
-This library isn't just a data struct for reading and writing textgrids--many utilities are
-provided to make it easy to work with with transcripts and associated audio files.
-This library also provides some other tools for use with praat.
+This application takes in data from two sources: a source .xml file saved on the local disk and data from an API call, and writes the data onto a .txt file. The program is run by using the terminal with self-made parameters and inputting the following: the directory of the source .xml, the language url parameters to be inserted for the API call, and the output path for the newly built .xml file (the target file) with the data inserted in the required places in the target file.
+
+It uses the DOM XML parser, Maven Compiler, and PicoCli for creating custom commands.
+
+Dom Parsing Documentation: https://docs.oracle.com/javase/tutorial/jaxp/dom/readingXML.html
+PicoCli: https://picocli.info/
+
 
 Praat is an open source software program for doing phonetic analysis and annotation 
 of speech.  [Praat can be downloaded here](<http://www.fon.hum.uva.nl/praat/>)
