@@ -14,11 +14,8 @@ This application takes in data from two sources: a source .xml file saved on the
 ---This application uses the DOM XML parser, Maven Compiler, and PicoCli for creating custom commands---
 
 Dom Parsing Documentation: https://docs.oracle.com/javase/tutorial/jaxp/dom/readingXML.html
+
 PicoCli: https://picocli.info/
-
-
-Praat is an open source software program for doing phonetic analysis and annotation 
-of speech.  [Praat can be downloaded here](<http://www.fon.hum.uva.nl/praat/>)
 
 # Table of contents
 1. [Documentation](#documentation)
