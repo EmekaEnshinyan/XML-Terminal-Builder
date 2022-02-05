@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<txml>
+    <translatable>
+        <segment>
+            <source>[source sent]</source>
+            <target>[target sent]</target>
+        </segment>
+    </translatable>
+    <translatable>
+        <segment>
+            <source>[source sent]</source>
+            <target>[target sent]</target>
+        </segment>
+    </translatable>
+    <translatable>
+        <segment>
+            <source>[source sent]</source>
+            <target>[target sent]</target>
+        </segment>
+    </translatable>
+    <translatable>
+        <segment>
+            <source>[source sent]</source>
+            <target>[target sent]</target>
+        </segment>
+    </translatable>
+    <translatable>
+        <segment>
+            <source>[source sent]</source>
+            <target>[target sent]</target>
+        </segment>
+    </translatable>
+</txml>

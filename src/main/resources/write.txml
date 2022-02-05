@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<txml xmlns="a b c d">
+    <translatable blockId="0" wordcount="4">
+        <segment segmentId="1">
+            <source>[source sentence]</source>
+            <target createdby="MT!">[target sentence]</target>
+        </segment>
+    </translatable>
+</txml>
