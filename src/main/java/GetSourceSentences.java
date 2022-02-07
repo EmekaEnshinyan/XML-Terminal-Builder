@@ -12,16 +12,16 @@ import java.util.ArrayList;
 import static java.lang.System.out;
 
 
-public class GetSourceSentences extends CommandSetup {
+public class GetSourceSentences {
     static ArrayList<String> sourceArray = new ArrayList<>();
     static ArrayList<String> sourceArray2 = new ArrayList<>();
     static String sourceList;
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, InterruptedException, SAXException {
+        //set filepath for the source file
         sourceSent("C:\\Users\\gnier\\Dropbox\\buildxml\\src\\main\\resources\\database.txt");
     }
     public static void sourceSent(String xmlFileLocation) throws ParserConfigurationException, SAXException, IOException, InterruptedException {
-
         out.println("---------------");
         out.println("Getting Text From Source File: \n");
         DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
@@ -54,13 +54,12 @@ public class GetSourceSentences extends CommandSetup {
             sourceArray2.add(s.replaceAll("\\s+", "\\%20"));
         }
 
+        //set filepath for .txt file
         FileWriter fw = new FileWriter("C:\\Users\\gnier\\Dropbox\\buildxml\\src\\main\\resources\\database.txt", true); // Step 2
         PrintWriter out = new PrintWriter(fw);
         out.println(sourceArray);
         out.print(sourceArray2);
         out.close();
     }
-
-
 
     }

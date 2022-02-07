@@ -15,6 +15,7 @@ import java.util.concurrent.Callable;
     // 4. created a counter loop for wordCount in xml
     // 5. make an errorstyle check
     // 6. design -e
+    // 7. make .txt write global
 
     @Command(name = "fileCli", description = "Performs file manipulation operations", mixinStandardHelpOptions = true, version = "File Client 1.0")
     public class CommandSetup implements Callable<String> {
