@@ -17,10 +17,6 @@ public class GetSourceSentences {
     static ArrayList<String> sourceArray2 = new ArrayList<>();
     static String sourceList;
 
-    public static void main(String[] args) throws ParserConfigurationException, IOException, InterruptedException, SAXException {
-        //set filepath for the source file
-        sourceSent("C:\\Users\\gnier\\Dropbox\\buildxml\\src\\main\\resources\\database.txt");
-    }
     public static void sourceSent(String xmlFileLocation) throws ParserConfigurationException, SAXException, IOException, InterruptedException {
         out.println("---------------");
         out.println("Getting Text From Source File: \n");
