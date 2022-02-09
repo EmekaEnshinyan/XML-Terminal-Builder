@@ -1,7 +1,6 @@
 import java.io.*;
 
-public class AddCodes extends GetSourceSentences {
-    static String dataBase = "C:\\Users\\gnier\\Dropbox\\buildxml\\src\\main\\resources\\database.txt";
+public class AddCodes extends TxtFile {
 
     public static void main(String[] args) throws IOException {
         addSource("en");
@@ -10,7 +9,7 @@ public class AddCodes extends GetSourceSentences {
     }
 
     public static void addSource(String sourceCode) throws IOException {
-        FileWriter fw = new FileWriter(dataBase, true);
+        FileWriter fw = new FileWriter(returnDatabase(), true);
         fw.write("\n" + sourceCode);
         System.out.println(sourceCode);
         fw.close();
@@ -19,9 +18,10 @@ public class AddCodes extends GetSourceSentences {
 
 
     public static void addTarget(String targetCode) throws IOException {
-        FileWriter fw = new FileWriter(dataBase, true);
+        FileWriter fw = new FileWriter(returnDatabase(), true);
         fw.write("\n" + targetCode);
         System.out.println(targetCode);
+        fw.close();
         }
     }
 

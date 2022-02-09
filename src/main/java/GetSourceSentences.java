@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import static java.lang.System.out;
 
 
-public class GetSourceSentences {
+public class GetSourceSentences extends TxtFile{
     static ArrayList<String> sourceArray = new ArrayList<>();
     static ArrayList<String> sourceArray2 = new ArrayList<>();
     static String sourceList;
@@ -51,7 +51,7 @@ public class GetSourceSentences {
         }
 
         //set filepath for .txt file
-        FileWriter fw = new FileWriter("C:\\Users\\gnier\\Dropbox\\buildxml\\src\\main\\resources\\database.txt", true); // Step 2
+        FileWriter fw = new FileWriter(returnDatabase(), true); // Step 2
         PrintWriter out = new PrintWriter(fw);
         out.println(sourceArray);
         out.print(sourceArray2);

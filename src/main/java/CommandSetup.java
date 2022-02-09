@@ -1,7 +1,11 @@
+import org.xml.sax.SAXException;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
+import javax.xml.transform.TransformerException;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -18,7 +22,8 @@ import java.util.concurrent.Callable;
     // 7. make .txt write global
 
     @Command(name = "fileCli", description = "Performs file manipulation operations", mixinStandardHelpOptions = true, version = "File Client 1.0")
-    public class CommandSetup implements Callable<String> {
+    public class CommandSetup extends TxtFile implements Callable<String> {
+
 
         @Option(names = "-f", description = " access f path for source xml and extract sentences")
         private String file;
@@ -41,7 +46,8 @@ import java.util.concurrent.Callable;
         }
 
         public String call() throws Exception {
-            FileWriter fileWriter = new FileWriter("C:\\Users\\gnier\\Dropbox\\buildxml\\src\\main\\resources\\database.txt");
+            FileWriter fileWriter = new FileWriter(returnDatabase());
+            fileWriter.write("");
             fileWriter.close();
 
             if (file != null) {
@@ -77,13 +83,26 @@ import java.util.concurrent.Callable;
                 AddCodes.addTarget(target);
             }
             if (output != null) {
-                if (output.contains("\\") & output.contains(".txml")){
-                    MakeXmlFile.createXml(output);
+                    try{
+                        MakeXmlFile.createXml(output);
+                    }catch (TransformerException e) {
+                        System.out.println("error transform");
+                    }catch (FileNotFoundException e){
+                        System.out.println("error file");
+                    }
+                }
+                /*if (output.contains("\\") & output.contains(".txml")){
+                    try{
+                        MakeXmlFile.createXml(output);
+                    }catch (FileNotFoundException e){
+                        e.printStackTrace();
+                        System.out.println("error!!");
+                    }
                 }else{
                     System.out.println("directory output of .txml file is invalid");
-                }
+                }*/
 
-            }
+
 
             return "success";
         }

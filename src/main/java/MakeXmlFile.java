@@ -1,6 +1,7 @@
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Arrays;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -17,8 +18,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 
-public class MakeXmlFile {
-    static String db = "C:\\Users\\gnier\\Dropbox\\buildxml\\src\\main\\resources\\database.txt";
+public class MakeXmlFile extends TxtFile{
+    //static String db = "C:\\Users\\gnier\\Dropbox\\buildxml\\src\\main\\resources\\database.txt";
     private static String[] sourceList;
     private static String[] targetExtract;
     private static String sourceCode;
@@ -31,6 +32,14 @@ public static String[] getSourceList() {
         return targetExtract;
     }
 
+    public static void setSourceCode(String sourceCode) {
+        MakeXmlFile.sourceCode = sourceCode;
+    }
+
+    public static void setTargetCode(String targetCode) {
+        MakeXmlFile.targetCode = targetCode;
+    }
+
     public static String getSourceCode() {
         return sourceCode;
     }
@@ -39,25 +48,34 @@ public static String[] getSourceList() {
         return targetCode;
     }
 
+    public static void main(String[] args) throws IOException, ParserConfigurationException, TransformerException{
+        createXml("C\\users\\gnier\\target.txml");
+        System.out.println("---");
+        System.out.println(Arrays.toString(targetExtract));
+        System.out.println("---");
+    }
+
     public static void createXml(String directory) throws IOException, TransformerException, ParserConfigurationException {
-        BufferedReader sourceReader = new BufferedReader(new FileReader(db));
+        BufferedReader sourceReader = new BufferedReader(new FileReader(returnDatabase()));
         //make source array
         String sourceElements = sourceReader.readLine().replaceAll("\\[", "").replaceAll("]", "");
         sourceList = sourceElements.split(",\\s");
 
 
         //result: Array of target sentences to be input into url
-        BufferedReader targetReader = Files.newBufferedReader(Paths.get(db));
+        BufferedReader targetReader = Files.newBufferedReader(Paths.get(returnDatabase()));
         for (int i = 0; i < 1; i++) {
             targetReader.readLine();
         }
         //String extractedLine = targetReader.readLine();
         String targetElements = targetReader.readLine().replaceAll("\\[", "").replaceAll("]", "");
+        System.out.println("--old targets--");
         targetExtract = targetElements.split(",\\s");
 
 
+
         //reads line with source code
-        BufferedReader sCodeReader = new BufferedReader(new FileReader(db));
+        BufferedReader sCodeReader = new BufferedReader(new FileReader(returnDatabase()));
         for (int i = 0; i < 2; i++) {
             sCodeReader.readLine();
         }
@@ -65,13 +83,16 @@ public static String[] getSourceList() {
        // System.out.println(sourceCode);
 
 
-        BufferedReader tCodeReader = new BufferedReader(new FileReader(db));
+        BufferedReader tCodeReader = new BufferedReader(new FileReader(returnDatabase()));
         for (int i = 0; i < 3; i++) {
             tCodeReader.readLine();
         }
         targetCode = tCodeReader.readLine();
 
-
+        System.out.println("t code: " + targetCode);
+        System.out.println("s code: " + sourceCode);
+        System.out.println("t extract: " + Arrays.toString(targetExtract));
+        System.out.println("s list: " + Arrays.toString(sourceList));
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder;
         dBuilder = dbFactory.newDocumentBuilder();
@@ -105,7 +126,10 @@ public static String[] getSourceList() {
             segment1.appendChild(source1);
             //target tag
             Element target1 = doc.createElement("target");
-            target1.appendChild(doc.createTextNode(CallApiTemplate.callApi("https://www.worldlingo.com/S11887.1/api?wl_password=7DC5xl94&wl_errorstyle=1&wl_srclang=" + sourceCode + "&wl_trglang=" + targetCode + "&wl_data=" + targetExtract[0]).replaceAll("[^\\x00-\\x7f]", "")));
+            target1.appendChild(doc.createTextNode(
+                    CallApiTemplate.callApi("https://www.worldlingo.com/S11887.1/api?wl_password=7DC5xl94&wl_"+
+                            "errorstyle=1&wl_srclang=" + sourceCode + "&wl_trglang=" + targetCode + "&wl_data="
+                            + targetExtract[0]).replaceAll("[^\\x00-\\x7f]", "")));
             segment1.appendChild(target1);
 
 

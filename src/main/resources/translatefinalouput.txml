@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<txml>
+    <translatable blockId="0" wordcount="4">
+        <segment segmentId="1">
+            <source>This is a test!</source>
+            <target>C'est un essai !</target>
+        </segment>
+    </translatable>
+    <translatable blockId="0" wordcount="4">
+        <segment segmentId="2">
+            <source>Where is the library?</source>
+            <target createdby="MT!">O est la bibliothque ?</target>
+        </segment>
+    </translatable>
+    <translatable blockId="0" wordcount="4">
+        <segment segmentId="3">
+            <source>I would like to use the restroom.</source>
+            <target createdby="MT!">Je voudrais employer les toilettes.</target>
+        </segment>
+    </translatable>
+    <translatable blockId="0" wordcount="4">
+        <segment segmentId="4">
+            <source>The bear ate some honey.</source>
+            <target createdby="MT!">L'ours a mang du miel.</target>
+        </segment>
+    </translatable>
+    <translatable blockId="0" wordcount="4">
+        <segment segmentId="5">
+            <source>Cookies are delicious!</source>
+            <target createdby="MT!">Les biscuits sont dlicieux !</target>
+        </segment>
+    </translatable>
+</txml>
