@@ -28,7 +28,11 @@ PicoCli: https://picocli.info/
 The computer specification requirements are negligable, meaning you can run this program on almost any local or remote machine with minimal drive space and CPU speed.
 
 ###### The following tools are required to to have the application serve its function:
-- Java
+- Java 15 (can also be run on Java 8)
+- Apache-Maven version 15
+- PicoCli version 4.6.3
+- Internet connection for the API calls
+
 ## Documentation
 
 paper documents
