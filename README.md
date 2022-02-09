@@ -3,7 +3,7 @@
 
 [![](https://img.shields.io/badge/license-Apache-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
 
-*Questions?  Comments?  Feedback? [![](https://badges.gitter.im/praatio/Lobby.svg)](https://gitter.im/praatio/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)*
+*Questions?  Comments?  Feedback? Email me at emeka.enshinyan@gmail.com 
 
 -----
 
@@ -47,4 +47,4 @@ shouters
 
 ## This is a test
 
-testing placement
+testing placement of table of contents
