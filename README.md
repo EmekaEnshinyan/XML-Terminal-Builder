@@ -25,9 +25,8 @@ PicoCli: https://picocli.info/
 
 ## Requirements
 The computer specification requirements are negligable, meaning you can run this program on almost any local or remote machine. 
-The following tools are required to get the application running:
-
-"*"
+###### The following tools are required to to have the application serve its function:
+* Java
 ## Documentation
 
 paper documents
