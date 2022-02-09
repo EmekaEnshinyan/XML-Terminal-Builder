@@ -1,9 +1,9 @@
 
-# Xml-Terminal Parameters Builder And Translator 
+# Xml & Terminal Parameters Builder
 
-[![](https://img.shields.io/badge/license-Apache-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE) [![](https://img.shields.io/pypi/v/praatio.svg)](https://pypi.org/project/praatio/)
+[![](https://img.shields.io/badge/license-Apache-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
 
-*Questions?  Comments?  Feedback? [![](https://badges.gitter.im/praatio/Lobby.svg)](https://gitter.im/praatio/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)*
+*Questions?  Comments?  Feedback? Email me at emeka.enshinyan@gmail.com 
 
 -----
 
@@ -23,6 +23,15 @@ PicoCli: https://picocli.info/
 4. [Requirements](#requirements)
 5. [Installation](#installation)
 
+## Requirements
+**NOTE** This has not been tested on a Mac or Linux OS.
+The computer specification requirements are negligable, meaning you can run this program on almost any local or remote machine with minimal drive space and CPU speed.
+
+###### The following tools are required to to have the application serve its function:
+- Java 15 (can also be run on Java 8)
+- Apache-Maven version 15
+- PicoCli version 4.6.3
+- Internet connection for the API calls
 
 ## Documentation
 
@@ -31,13 +40,8 @@ paper documents
 ## Tutorials
 
 are
-    
-    
-## Version History
 
-non-existent
 
-## Requirements
 
 silent
 
@@ -47,4 +51,4 @@ shouters
 
 ## This is a test
 
-testing placement
+testing placement of table of contents
