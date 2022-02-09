@@ -1,5 +1,5 @@
 
-# Xml-Terminal Parameters Builder And Translator 
+# Xml & Terminal Parameters Builder
 
 [![](https://img.shields.io/badge/license-Apache-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
 
@@ -23,7 +23,10 @@ PicoCli: https://picocli.info/
 4. [Requirements](#requirements)
 5. [Installation](#installation)
 
-
+## Requirements
+The computer specification requirements are negligable, meaning you can run this program on almost any local or remote machine. 
+The following tools are required to get the application running:
+"*"
 ## Documentation
 
 paper documents
@@ -31,13 +34,8 @@ paper documents
 ## Tutorials
 
 are
-    
-    
-## Version History
 
-non-existent
 
-## Requirements
 
 silent
 
