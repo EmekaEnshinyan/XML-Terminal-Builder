@@ -24,9 +24,11 @@ PicoCli: https://picocli.info/
 5. [Installation](#installation)
 
 ## Requirements
-The computer specification requirements are negligable, meaning you can run this program on almost any local or remote machine. 
+**NOTE** This has not been tested on a Mac or Linux OS.
+The computer specification requirements are negligable, meaning you can run this program on almost any local or remote machine with minimal drive space and CPU speed.
+
 ###### The following tools are required to to have the application serve its function:
-* Java
+- Java
 ## Documentation
 
 paper documents
