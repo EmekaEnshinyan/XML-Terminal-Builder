@@ -50,12 +50,14 @@ In the Terminal, navigate to
 $cd ...target\classes
 ```
 
-Run the program using the following coomand
+Run the program using the following command
 ```
 $java buildxml -[source .xml filepath] -[source language code] -[target language code] -[created target .xml filepath]
 ```
-
+**try to place source xml path in abst class**
 Example:
+```
+$java buildxml -"C:\Users\emeka\Document\source.xml -en -fr -
 
 
 to determine where you would like the .txt data to be written on your disk, you can go to TxtFile.java and set the return statement 
