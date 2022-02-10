@@ -19,7 +19,7 @@ Dom Parsing Documentation: https://docs.oracle.com/javase/tutorial/jaxp/dom/read
 
 PicoCli: https://picocli.info/
 
-# Table of contents
+# Documentation
 1. [Requirements](#requirement)
 2. [Setup](#Setup)
 3. [Running](#Running)
@@ -38,6 +38,6 @@ The computer specification requirements are negligable, meaning you can run this
 
 paper documents
 
-## Runnin In Terminal
+## Running In A Terminal
 
 to determine where you would like the .txt data to be written on your disk, you can go to TxtFile.java and set the return statement 
