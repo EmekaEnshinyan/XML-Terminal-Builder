@@ -58,9 +58,13 @@ Run the program using the following command
 $java buildxml -f -s -t -o
 ```
 Meaning of each command line option:
+
 -f => source .xml filepath
+
 -s => source language code
+
 -t => target language code
+
 -o => the filepath for where the .xml will be written
 
 Example:
