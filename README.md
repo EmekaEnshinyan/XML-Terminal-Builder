@@ -7,9 +7,11 @@
 
 -----
 
-Fundamental function: write data to a file, and place the data in a built .xml. 
+Fundamental function: write data to a file, and place the data in a built .xml all of which will be run on a terminal.
 
-This application takes in data from two sources: a source .xml file saved on the local disk and data from an API call, and writes the data onto a .txt file. The program is run by using the terminal with self-made parameters and inputting the following: the directory of the source .xml, the language url parameters to be inserted for the API call, and the output path for the newly built .xml file (the target file) with the data inserted in the required places in the target file.
+This application takes in data from two sources: a source .xml file saved on the local disk and target data from an API call. There are four pieces of data that is stored in a .txt file: 1. an array of sentences from the source .xml file that will be in some language L, 2. an array of the source sentences but modified as a property value to build an API URL for each sentence, 3. the language code for the source language to be used in the API call, 4. the language code for the target language to be used in the API call.  
+
+The program is run by using the terminal with self-made parameters and inputting the following: the directory of the source .xml, the language url parameters to be inserted for the API call, and the output path for the newly built .xml file (the target file) with the data inserted in the required places in the target file.
 
 ---This application uses the DOM XML parser, Maven Compiler, and PicoCli for creating custom commands---
 
