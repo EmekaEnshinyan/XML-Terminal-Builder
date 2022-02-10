@@ -50,4 +50,12 @@ In the Terminal, navigate to
 $cd ...target\classes
 ```
 
+Run the program using the following coomand
+```
+$java buildxml -[source .xml filepath] -[source language code] -[target language code] -[created target .xml filepath]
+```
+
+Example:
+
+
 to determine where you would like the .txt data to be written on your disk, you can go to TxtFile.java and set the return statement 
