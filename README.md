@@ -23,6 +23,7 @@ Picocli: https://picocli.info/
 1. [Requirements](#requirement)
 2. [Setup](#Setup)
 3. [Running](#Running)
+4. 
 
 ## Requirements
 **NOTE** This has not been tested on a Mac or Linux OS.
@@ -48,19 +49,19 @@ The computer specification requirements are negligable, meaning you can run this
 In the Terminal, type:
 
 ```
-$cd {?}buildxml\target\classes
+$cd {?}CommandSetup\target\classes  //where {?} is the directory for where the application was saved
 ```
-Where {?} is the directory for where the application was saved
+
 
 Run the program using the following command
 ```
-$java buildxml -source -src -trg -[created target .xml filepath]
+$java buildxml -f -s -t -o
 ```
 Meaning of each command line option:
--[source .xml filepath]
--[source language code] 
--[target language code] 
--[created target .xml filepath]
+-f => source .xml filepath
+-s => source language code
+-t => target language code
+-o => the filepath for where the .xml will be written
 
 Example:
 ```
