@@ -22,8 +22,8 @@ Picocli: https://picocli.info/
 # Documentation
 1. [Requirements](#Requirements)
 2. [Setup](#Setup)
-3. [Running-The-Application](#RunningTheApplication)
-4. [Improvements](#Improvements)
+3. [Running-The-Application](#Running-The-Application)
+4. [Bugs-&-Improvements](#Bugs-&-Improvements)
 
 ## Requirements
 **NOTE** This has not been tested on a Mac or Linux OS.
@@ -42,7 +42,7 @@ The computer specification requirements are negligable, meaning you can run this
 3. Open the file **TxtFile.java** and set the return statement in method **returnDatabase()** as the desired filepath of the .txt file
 
 
-## Running The Application
+## Running-The-Application
 
 **Make sure to compile the code before running**
 
