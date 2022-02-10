@@ -22,7 +22,7 @@ Picocli: https://picocli.info/
 # Documentation
 1. [Requirements](#Requirements)
 2. [Setup](#Setup)
-3. [Running](#Running)
+3. [Running](#Running The Application)
 4. [Improvements](#Improvements)
 
 ## Requirements
@@ -67,3 +67,5 @@ Example:
 ```
 $java buildxml -"C:\Users\emeka\Documents\source.xml -en -fr -"C:\Users\emeka\Documents\randfilename.xml"
 ```
+
+## Improvements
