@@ -22,7 +22,7 @@ PicoCli: https://picocli.info/
 # Documentation
 1. [Requirements](#requirement)
 2. [Setup](#Setup)
-3. [Running](#Running In A Terminal)
+3. [Running](#Running)
 
 ## Requirements
 **NOTE** This has not been tested on a Mac or Linux OS.
@@ -38,6 +38,6 @@ The computer specification requirements are negligable, meaning you can run this
 
 paper documents
 
-## Running In A Terminal
+## Running
 
 to determine where you would like the .txt data to be written on your disk, you can go to TxtFile.java and set the return statement 
