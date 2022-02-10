@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.Callable;
 
 
@@ -23,7 +24,8 @@ import java.util.concurrent.Callable;
 
     @Command(name = "fileCli", description = "Performs file manipulation operations", mixinStandardHelpOptions = true, version = "File Client 1.0")
     public class CommandSetup extends TxtFile implements Callable<String> {
-
+        static String[] codeList = {"en", "ar", "de", "el", "es", "fr", "it", "ja", "ko", "nl", "pt",
+                "ru", "sv", "zh_cn", "zh_tw"};
 
         @Option(names = "-f", description = " access f path for source xml and extract sentences")
         private String file;
@@ -61,8 +63,6 @@ import java.util.concurrent.Callable;
                 }
             }
             if (source != null){
-                String[] codeList = {"en", "ar", "de", "el", "es", "fr", "it", "ja", "ko", "nl", "pt",
-                        "ru", "sv", "zh_cn", "zh_tw"};
                 List<String> sArray = new ArrayList<>(List.of(codeList));
                 if (!sArray.contains(source)) {
                     System.out.println("Error: " + source + " is an unapproved language code");
@@ -72,37 +72,27 @@ import java.util.concurrent.Callable;
                 AddCodes.addSource(source);
             }
             if (target != null){
-                String[] codeList = {"en", "ar", "de", "el", "es", "fr", "it", "ja", "ko", "nl", "pt",
-                        "ru", "sv", "zh_cn", "zh_tw"};
                 List<String> sArray = new ArrayList<>(List.of(codeList));
-                if (!sArray.contains(source)) {
-                    System.out.println("Error: " + source + " is an unapproved language code");
+                if (!sArray.contains(target)) {
+                    System.out.println("Error: " + target + " is an unapproved language code");
                     System.exit(3);
                 }
-                System.out.println("inputted source language code approved: " + source + "\n");
+                System.out.println("inputted source language code approved: " + target);
                 AddCodes.addTarget(target);
             }
             if (output != null) {
                     try{
                         MakeXmlFile.createXml(output);
                     }catch (TransformerException e) {
-                        System.out.println("error transform");
+                        System.out.println("Transformation error".toUpperCase(Locale.ROOT));
+                        System.out.println("Application will now exit");
+                        System.exit(4);
                     }catch (FileNotFoundException e){
-                        System.out.println("error file");
+                        System.out.println("File Not Found".toUpperCase(Locale.ROOT));
+                        System.out.println("Application will now exit");
+                        System.exit(5);
                     }
                 }
-                /*if (output.contains("\\") & output.contains(".txml")){
-                    try{
-                        MakeXmlFile.createXml(output);
-                    }catch (FileNotFoundException e){
-                        e.printStackTrace();
-                        System.out.println("error!!");
-                    }
-                }else{
-                    System.out.println("directory output of .txml file is invalid");
-                }*/
-
-
 
             return "success";
         }
