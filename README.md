@@ -41,21 +41,27 @@ The computer specification requirements are negligable, meaning you can run this
 3. Open the file **TxtFile.java** and set the return statement in method **returnDatabase()** as the desired filepath of the .txt file
 
 
-## Running
+## Running The Application
 
 **Make sure to compile the code before running**
 
-In the Terminal, navigate to 
+In the Terminal, type:
 
 ```
-$cd ...target\classes
+$cd {?}buildxml\target\classes
 ```
+Where {?} is the directory for where the application was saved
 
 Run the program using the following command
 ```
-$java buildxml -[source .xml filepath] -[source language code] -[target language code] -[created target .xml filepath]
+$java buildxml -source -src -trg -[created target .xml filepath]
 ```
-**try to place source xml path in abst class**
+Meaning of each command line option:
+-[source .xml filepath]
+-[source language code] 
+-[target language code] 
+-[created target .xml filepath]
+
 Example:
 ```
 $java buildxml -"C:\Users\emeka\Documents\source.xml -en -fr -"C:\Users\emeka\Documents\randfilename.xml"
