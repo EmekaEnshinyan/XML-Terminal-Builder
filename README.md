@@ -20,10 +20,9 @@ Dom Parsing Documentation: https://docs.oracle.com/javase/tutorial/jaxp/dom/read
 PicoCli: https://picocli.info/
 
 # Table of contents
-1. [Documentation](#documentation)
-2. [Tutorials](#tutorials)
-4. [Requirements](#requirements)
-5. [Installation](#installation)
+1. [Requirements](#requirements)
+2. [Setup](#Setup)
+3. [Running In Terminal](#Running In Terminal)
 
 ## Requirements
 **NOTE** This has not been tested on a Mac or Linux OS.
@@ -35,18 +34,10 @@ The computer specification requirements are negligable, meaning you can run this
 - PicoCli version 4.6.3
 - Internet connection for the API calls
 - A .txt file
-## Documentation
+## Setup
 
 paper documents
 
-## Tutorials
+## Runnin In Terminal
 
-to determine where you would like the .txt data to be written on your disk, you can go to TxtFile.java and set the return statement to the preferred dir
-
-# Installation
-
-shouters
-
-## This is a test
-
-testing placement of table of contents
+to determine where you would like the .txt data to be written on your disk, you can go to TxtFile.java and set the return statement 
