@@ -28,7 +28,7 @@ Picocli: https://picocli.info/
 **NOTE** This has not been tested on a Mac or Linux OS.
 The computer specification requirements are negligable, meaning you can run this program on almost any local or remote machine with minimal drive space and CPU speed.
 
-###### The following tools are required to to have the application serve its function:
+###### The following tools are required to to have the application run:
 - Java 15 (can also be run on Java 8)
 - Apache-Maven version 15
 - PicoCli version 4.6.3
@@ -36,7 +36,17 @@ The computer specification requirements are negligable, meaning you can run this
 
 ## Setup
 
+1. Simply download the repository
+2. Make sure pom.xlm contains the right dependencies
+3. Open the file **TxtFile.java** and set the desired directory
 
 ## Running
+
+**Make sure to compile the code before running**
+
+In the Terminal, navigate to 
+
+```
+$cd ...test\classes
 
 to determine where you would like the .txt data to be written on your disk, you can go to TxtFile.java and set the return statement 
