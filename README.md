@@ -1,7 +1,7 @@
 
 # Xml & Terminal Parameters Builder
 
-[![](https://img.shields.io/badge/license-Apache-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
+[![](https://img.shields.io/badge/license-PicoCLI-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
 
 *Questions?  Comments?  Feedback? Email me at emeka.enshinyan@gmail.com 
 
