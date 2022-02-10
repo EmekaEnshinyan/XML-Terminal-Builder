@@ -32,20 +32,16 @@ The computer specification requirements are negligable, meaning you can run this
 - Apache-Maven version 15
 - PicoCli version 4.6.3
 - Internet connection for the API calls
-
+- A .txt file
 ## Documentation
 
 paper documents
 
 ## Tutorials
 
-are
+to determine where you would like the .txt data to be written on your disk, you can go to TxtFile.java and set the return statement to the preferred dir
 
-
-
-silent
-
-## Installation
+# Installation
 
 shouters
 
