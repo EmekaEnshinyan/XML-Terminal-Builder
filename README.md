@@ -68,4 +68,6 @@ Example:
 $java buildxml -"C:\Users\emeka\Documents\source.xml -en -fr -"C:\Users\emeka\Documents\randfilename.xml"
 ```
 
-## Improvements
+## Bugs-&-Improvements
+
+### Shift to an independent deployed database for target sentences
