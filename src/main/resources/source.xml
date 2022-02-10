@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<txml>
+	<translatable blockId="0" wordcount="4">
+		<segment segmentId="1">
+			<source>This is a test!</source>
+		</segment>
+	</translatable>
+	<translatable blockId="0" wordcount="4">
+		<segment segmentId="2">
+			<source>Where is the library?</source>
+		</segment>
+	</translatable>
+	<translatable blockId="0" wordcount="7">
+		<segment segmentId="3">
+			<source>I would like to use the restroom.</source>
+		</segment>
+	</translatable>
+	<translatable blockId="0" wordcount="5">
+		<segment segmentId="4">
+			<source>The bear ate some honey.</source>
+		</segment>
+	</translatable>
+	<translatable blockId="0" wordcount="3">
+		<segment segmentId="5">
+			<source>Cookies are delicious!</source>
+		</segment>
+	</translatable>
+</txml>
