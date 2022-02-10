@@ -1,54 +1,62 @@
 
 # Xml & Terminal Parameters Builder
 
-[![](https://img.shields.io/badge/license-Apache-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
+[![](https://img.shields.io/badge/license-Picocli-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
 
 *Questions?  Comments?  Feedback? Email me at emeka.enshinyan@gmail.com 
 
 -----
 
-Fundamental function: write data to a file, and place the data in a built .xml. 
+Fundamental function: write data to a file, and place the data in a built .xml all of which will be run on a terminal.
 
-This application takes in data from two sources: a source .xml file saved on the local disk and data from an API call, and writes the data onto a .txt file. The program is run by using the terminal with self-made parameters and inputting the following: the directory of the source .xml, the language url parameters to be inserted for the API call, and the output path for the newly built .xml file (the target file) with the data inserted in the required places in the target file.
+This application takes in data from two sources: a source .xml file saved on the local disk and target data from an API call. There are four pieces of data that is stored in a .txt file: 1. an array of sentences from the source .xml file that will be in some language L, 2. an array of the source sentences but modified as a property value to build an API URL for each sentence, 3. the language code for the source language to be used in the API call, 4. the language code for the target language to be used in the API call. The retrieved data will be of some translation of L, T(L).
 
----This application uses the DOM XML parser, Maven Compiler, and PicoCli for creating custom commands---
+The program is run by using the terminal with custom-made parameters that I built and inputting the following: the directory of the source .xml, the language url parameters to be inserted for the API call, and the output path for the newly built .xml file (the target file) with the data inserted in the required places in the target file.
+
+---This application uses the DOM XML parser, Maven Compiler, and Picocli for creating custom commands---
 
 Dom Parsing Documentation: https://docs.oracle.com/javase/tutorial/jaxp/dom/readingXML.html
 
-PicoCli: https://picocli.info/
+Picocli: https://picocli.info/
 
-# Table of contents
-1. [Documentation](#documentation)
-2. [Tutorials](#tutorials)
-4. [Requirements](#requirements)
-5. [Installation](#installation)
+# Documentation
+1. [Requirements](#requirement)
+2. [Setup](#Setup)
+3. [Running](#Running)
 
 ## Requirements
 **NOTE** This has not been tested on a Mac or Linux OS.
 The computer specification requirements are negligable, meaning you can run this program on almost any local or remote machine with minimal drive space and CPU speed.
 
-###### The following tools are required to to have the application serve its function:
+###### The following tools are required to to have the application run:
 - Java 15 (can also be run on Java 8)
 - Apache-Maven version 15
 - PicoCli version 4.6.3
 - Internet connection for the API calls
 
-## Documentation
+## Setup
 
-paper documents
-
-## Tutorials
-
-are
+1. Simply download the repository
+2. Make sure pom.xlm contains the right dependencies
+3. Open the file **TxtFile.java** and set the return statement in method **returnDatabase()** as the desired filepath of the .txt file
 
 
+## Running
 
-silent
+**Make sure to compile the code before running**
 
-## Installation
+In the Terminal, navigate to 
 
-shouters
+```
+$cd ...target\classes
+```
 
-## This is a test
-
-testing placement of table of contents
+Run the program using the following command
+```
+$java buildxml -[source .xml filepath] -[source language code] -[target language code] -[created target .xml filepath]
+```
+**try to place source xml path in abst class**
+Example:
+```
+$java buildxml -"C:\Users\emeka\Documents\source.xml -en -fr -"C:\Users\emeka\Documents\randfilename.xml"
+```
