@@ -38,7 +38,8 @@ The computer specification requirements are negligable, meaning you can run this
 
 1. Simply download the repository
 2. Make sure pom.xlm contains the right dependencies
-3. Open the file **TxtFile.java** and set the desired directory
+3. Open the file **TxtFile.java** and set the return statement in method 
+
 
 ## Running
 
@@ -57,7 +58,5 @@ $java buildxml -[source .xml filepath] -[source language code] -[target language
 **try to place source xml path in abst class**
 Example:
 ```
-$java buildxml -"C:\Users\emeka\Document\source.xml -en -fr -
-
-
-to determine where you would like the .txt data to be written on your disk, you can go to TxtFile.java and set the return statement 
+$java buildxml -"C:\Users\emeka\Documents\source.xml -en -fr -"C:\Users\emeka\Documents\randfilename.xml"
+```
