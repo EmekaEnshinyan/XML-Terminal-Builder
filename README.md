@@ -38,7 +38,7 @@ The computer specification requirements are negligable, meaning you can run this
 
 1. Simply download the repository
 2. Make sure pom.xlm contains the right dependencies
-3. Open the file **TxtFile.java** and set the return statement in method 
+3. Open the file **TxtFile.java** and set the return statement in method **returnDatabase()** as the desired filepath of the .txt file
 
 
 ## Running
