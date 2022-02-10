@@ -20,7 +20,7 @@ Dom Parsing Documentation: https://docs.oracle.com/javase/tutorial/jaxp/dom/read
 PicoCli: https://picocli.info/
 
 # Table of contents
-1. [Requirements](#requirements)
+1. [Requirements](#requirement)
 2. [Setup](#Setup)
 3. [Running-In-Terminal](#Running In Terminal)
 
