@@ -1,7 +1,7 @@
 
 # Xml & Terminal Parameters Builder
 
-[![](https://img.shields.io/badge/license-PicoCLI-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
+[![](https://img.shields.io/badge/license-Picocli-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
 
 *Questions?  Comments?  Feedback? Email me at emeka.enshinyan@gmail.com 
 
@@ -13,11 +13,11 @@ This application takes in data from two sources: a source .xml file saved on the
 
 The program is run by using the terminal with self-made parameters and inputting the following: the directory of the source .xml, the language url parameters to be inserted for the API call, and the output path for the newly built .xml file (the target file) with the data inserted in the required places in the target file.
 
----This application uses the DOM XML parser, Maven Compiler, and PicoCli for creating custom commands---
+---This application uses the DOM XML parser, Maven Compiler, and Picocli for creating custom commands---
 
 Dom Parsing Documentation: https://docs.oracle.com/javase/tutorial/jaxp/dom/readingXML.html
 
-PicoCli: https://picocli.info/
+Picocli: https://picocli.info/
 
 # Documentation
 1. [Requirements](#requirement)
