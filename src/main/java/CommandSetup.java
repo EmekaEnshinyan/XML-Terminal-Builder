@@ -24,7 +24,7 @@ import java.util.concurrent.Callable;
 
     @Command(name = "fileCli", description = "Performs file manipulation operations", mixinStandardHelpOptions = true, version = "File Client 1.0")
     public class CommandSetup extends TxtFile implements Callable<String> {
-        static String[] codeList = {"en", "ar", "de", "el", "es", "fr", "it", "ja", "ko", "nl", "pt",
+        private final static String[] codeList = {"en", "ar", "de", "el", "es", "fr", "it", "ja", "ko", "nl", "pt",
                 "ru", "sv", "zh_cn", "zh_tw"};
 
         @Option(names = "-f", description = " access f path for source xml and extract sentences")
