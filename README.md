@@ -22,7 +22,7 @@ PicoCli: https://picocli.info/
 # Documentation
 1. [Requirements](#requirement)
 2. [Setup](#Setup)
-3. [Running](#Running)
+3. [Running](#Running In A Terminal)
 
 ## Requirements
 **NOTE** This has not been tested on a Mac or Linux OS.
