@@ -20,10 +20,10 @@ Dom Parsing Documentation: https://docs.oracle.com/javase/tutorial/jaxp/dom/read
 Picocli: https://picocli.info/
 
 # Documentation
-1. [Requirements](#requirement)
+1. [Requirements](#Requirements)
 2. [Setup](#Setup)
 3. [Running](#Running)
-4. 
+4. [Improvements](#Improvements)
 
 ## Requirements
 **NOTE** This has not been tested on a Mac or Linux OS.
