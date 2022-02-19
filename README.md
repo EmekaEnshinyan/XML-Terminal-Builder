@@ -9,7 +9,7 @@
 
 Fundamental function: write data to a file, and place the data in a built .xml all of which will be run on a terminal.
 
-This application takes in data from two sources: a source .xml file saved on the local disk and target data from an API call. There are four pieces of data that is stored in a .txt file: 1. an array of sentences from the source .xml file that will be in some language L, 2. an array of the source sentences but modified as a property value to build an API URL for each sentence, 3. the language code for the source language to be used in the API call, 4. the language code for the target language to be used in the API call. The retrieved data will be of some translation of L, T(L).
+This application takes in data from two sources: a source .xml file saved on the local disk and target data from an API call. There are four pieces of data that is stored in a .txt file: 1. an array of sentences from the source .xml file that will be in some language L, 2. an array of the source sentences but modified as a property value to build an API URL for each sentence, 3. the language code for the source language to be used in the API call, 4. the language code for the target language to be used in the API call, and the retrieved data will be of a translation T(L).
 
 The program is run by using the terminal with custom-made parameters that I built and inputting the following: the directory of the source .xml, the language url parameters to be inserted for the API call, and the output path for the newly built .xml file (the target file) with the data inserted in the required places in the target file.
 
@@ -20,9 +20,10 @@ Dom Parsing Documentation: https://docs.oracle.com/javase/tutorial/jaxp/dom/read
 Picocli: https://picocli.info/
 
 # Documentation
-1. [Requirements](#requirement)
+1. [Requirements](#Requirements)
 2. [Setup](#Setup)
-3. [Running](#Running)
+3. [Running-The-Application](#Running-The-Application)
+4. [Bugs-&-Improvements](#Bugs-&-Improvements)
 
 ## Requirements
 **NOTE** This has not been tested on a Mac or Linux OS.
@@ -41,22 +42,36 @@ The computer specification requirements are negligable, meaning you can run this
 3. Open the file **TxtFile.java** and set the return statement in method **returnDatabase()** as the desired filepath of the .txt file
 
 
-## Running
+## Running-The-Application
 
 **Make sure to compile the code before running**
 
-In the Terminal, navigate to 
+In the Terminal, type:
 
 ```
-$cd ...target\classes
+$cd {?}CommandSetup\target\classes  //where {?} is the directory for where the application was saved
 ```
+
 
 Run the program using the following command
 ```
-$java buildxml -[source .xml filepath] -[source language code] -[target language code] -[created target .xml filepath]
+$java buildxml -f -s -t -o
 ```
-**try to place source xml path in abst class**
+Meaning of each command line option:
+
+-f => source .xml filepath
+
+-s => source language code
+
+-t => target language code
+
+-o => the filepath for where the .xml will be written
+
 Example:
 ```
 $java buildxml -"C:\Users\emeka\Documents\source.xml -en -fr -"C:\Users\emeka\Documents\randfilename.xml"
 ```
+
+## Bugs-&-Improvements
+
+### Shift to an independent deployed database for target sentences
