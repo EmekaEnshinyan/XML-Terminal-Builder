@@ -24,7 +24,7 @@ Picocli: https://picocli.info/
 1. [Requirements](#Requirements)
 2. [Setup](#Setup)
 3. [Running-The-Application](#Running-The-Application)
-4. [Bugs-&-Improvements](#Bugs-&-Improvements)
+4. [Future-Plans-&-Improvements](#Future-Plans-&-Improvements)
 
 ## Requirements
 **NOTE** This has not been tested on a Mac or Linux OS.
@@ -73,6 +73,6 @@ Example:
 $java buildxml -"C:\Users\emeka\Documents\source.xml -en -fr -"C:\Users\emeka\Documents\randfilename.xml"
 ```
 
-## Bugs-&-Improvements
+## Future-Plans-&-Improvements
 
-### Shift to an independent deployed database for target sentences
+### Shift to a self-made cloud database for target sentences
