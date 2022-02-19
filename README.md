@@ -2,14 +2,15 @@
 # Xml & Terminal Parameters Builder
 
 [![](https://img.shields.io/badge/license-Picocli-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
+[![](https://img.shields.io/badge/license-Picocli-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
 
 *Questions?  Comments?  Feedback? Email me at emeka.enshinyan@gmail.com 
 
 -----
 
-Fundamental function: write data to a file, and place the data in a built .xml all of which will be run on a terminal.
+Fundamental function: write data retrieved from a .xml file and API calls to a file, and place the data in a built .xml, and run the application on a terminal.
 
-This application takes in data from two sources: a source .xml file saved on the local disk and target data from an API call. There are four pieces of data that is stored in a .txt file: 1. an array of sentences from the source .xml file that will be in some language L, 2. an array of the source sentences but modified as a property value to build an API URL for each sentence, 3. the language code for the source language to be used in the API call, 4. the language code for the target language to be used in the API call, and the retrieved data will be of a translation T(L).
+This application takes in data from two sources: a source .xml file saved on the local disk and target data from an API call. The API being used is from WorldLingo's API Documentation guide. There are four pieces of data that is stored in a .txt file: 1. an array of sentences from the source .xml file that will be in some language L, 2. an array of the source sentences but modified as a property value to build an API URL for each sentence, 3. the language code for the source language to be used in the API call, 4. the language code for the target language to be used in the API call, and the retrieved data will be of a translation T(L).
 
 The program is run by using the terminal with custom-made parameters that I built and inputting the following: the directory of the source .xml, the language url parameters to be inserted for the API call, and the output path for the newly built .xml file (the target file) with the data inserted in the required places in the target file.
 
