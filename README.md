@@ -2,7 +2,7 @@
 # Xml & Terminal Parameters Builder
 
 [![](https://img.shields.io/badge/license-Picocli-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
-[![](https://img.shields.io/badge/license-Picocli-blue.svg?)](https://github.com/remkop/picocli/blob/master/LICENSE)
+[![](https://img.shields.io/badge/license-WorldLingo-red.svg?)](https://www.worldlingo.com/en/downloads/ServiceAPI.pdf)
 
 *Questions?  Comments?  Feedback? Email me at emeka.enshinyan@gmail.com 
 
