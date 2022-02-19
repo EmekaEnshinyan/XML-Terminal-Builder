@@ -23,12 +23,12 @@ public class GetSourceSentences extends TxtFile{
         DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
 
         builderFactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
-        //parse txml file
+        //parse xml file
         DocumentBuilder builder = builderFactory.newDocumentBuilder();
         org.w3c.dom.Document document = builder.parse(new File(xmlFileLocation));
         //
         document.getDocumentElement().normalize();
-        //specify tag in txml file and iterate
+        //specify tag in xml file and iterate
         NodeList nodeList = document.getElementsByTagName("segment");
 
         for (int i = 0; i < nodeList.getLength(); i++) {

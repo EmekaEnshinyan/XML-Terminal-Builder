@@ -49,7 +49,7 @@ public static String[] getSourceList() {
     }
 
     public static void main(String[] args) throws IOException, ParserConfigurationException, TransformerException{
-        createXml("C\\users\\gnier\\target.txml");
+        createXml("C\\users\\gnier\\target.xml");
         System.out.println("---");
         System.out.println(Arrays.toString(targetExtract));
         System.out.println("---");
@@ -99,7 +99,7 @@ public static String[] getSourceList() {
         Document doc = dBuilder.newDocument();
 
         //add elements to Document
-        Element rootElement = doc.createElementNS("", "txml");
+        Element rootElement = doc.createElementNS("", "emekaxml");
         doc.appendChild(rootElement);
 
 

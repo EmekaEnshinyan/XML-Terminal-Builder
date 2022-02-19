@@ -1,11 +1,9 @@
-import org.xml.sax.SAXException;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
 import javax.xml.transform.TransformerException;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -26,23 +24,23 @@ import java.util.concurrent.Callable;
     public class CommandSetup extends TxtFile implements Callable<String> {
         private final static String[] codeList = {"en", "ar", "de", "el", "es", "fr", "it", "ja", "ko", "nl", "pt",
                 "ru", "sv", "zh_cn", "zh_tw"};
+        String approved = "en, ar, de, el, es, fr, it, ja, ko, nl, pt, ru, sv, zh_cn, zh_tw";
 
-        @Option(names = "-f", description = " access f path for source xml and extract sentences")
+        @Option(names = "-f", description = " access the  filepath for source xml and extract sentences")
         private String file;
 
-        @Option(names = "-s", description = "source language")
+        @Option(names = "-s", description = "source language code\n list of approved codes: en, ar, de, el, es, fr, it, ja,"+
+                "ko, nl, pt, ru, sv, zh_cn, zh_tw")
         private String source;
 
-        @Option(names = "-t", description = "target language")
+        @Option(names = "-t", description = "target language code\n list of approved codes: en, ar, de, el, es, fr, it, ja,"+
+                "ko, nl, pt, ru, sv, zh_cn, zh_tw")
         private String target;
 
-        @Option(names = "-o", description = " build xml and save as file in location o")
+        @Option(names = "-o", description = "build .xml file and save in inputted location")
         private String output;
 
-
-
-
-        public static void main(String... args) throws Exception {
+        public static void main(String ... args) throws Exception {
             int exitCode = new picocli.CommandLine(new CommandSetup()).execute(args);
             System.exit(exitCode);
         }
@@ -53,12 +51,12 @@ import java.util.concurrent.Callable;
             fileWriter.close();
 
             if (file != null) {
-                if (file.contains("\\") & file.contains(".txml")) {
+                if (file.contains("\\") & file.contains(".xml")) {
                     GetSourceSentences.sourceSent(file);
                     System.out.println("------");
-                    System.out.println("source.txml data retrieved\n");
+                    System.out.println("source.xml data retrieved\n");
                 } else {
-                    System.out.println("File \"source.txml\" not found. Check FileName and Directory.");
+                    System.out.println("File \"source.xml\" not found. Check FileName and Directory.");
                     System.exit(2);
                 }
             }

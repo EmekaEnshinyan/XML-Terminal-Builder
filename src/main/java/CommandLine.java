@@ -16895,7 +16895,7 @@ public class CommandLine {
                     }
                 }
                 if (count.charCount == 0 && length(text) + offset > columnValue.maxLength) {
-                    // The value is a single word that is too big to be written to the column. WriteSourceTranslatedToTXML as much as we can.
+                    // The value is a single word that is too big to be written to the column. MakeXmlFile as much as we can.
                     copy(text, columnValue, offset, count);
                 }
                 return count.charCount;
