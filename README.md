@@ -75,4 +75,4 @@ $java buildxml -"C:\Users\emeka\Documents\source.xml -en -fr -"C:\Users\emeka\Do
 
 ## Plans-&-Improvements
 
-1. Shift to a self-made cloud database for target sentences
+1. Shift to a self-made cloud database for target sentences 
