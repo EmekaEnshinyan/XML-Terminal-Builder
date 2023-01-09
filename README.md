@@ -8,7 +8,7 @@
 
 -----
 
-Fundamental function: write data retrieved from a .xml file and API calls to a file, and place the data in a built .xml, and run the application on a terminal.
+Fundamental function: write data retrieved from an xml file and API calls to a file, place the data in a new xml file during build phase, and run the application from the terminal.
 
 This application takes in data from two sources: a source .xml file saved on the local disk and target data from an API call. The API being used is from WorldLingo's API Documentation guide. There are four pieces of data that is stored in a .txt file: 1. an array of sentences from the source .xml file that will be in some language L, 2. an array of the source sentences but modified as a property value to build an API URL for each sentence, 3. the language code for the source language to be used in the API call, 4. the language code for the target language to be used in the API call, and the retrieved data will be of a translation T(L).
 
